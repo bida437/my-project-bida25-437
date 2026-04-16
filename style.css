@@ -166,3 +166,15 @@ footer {
     background-color: black;
     color: white;
 }
+.about {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.about p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
