@@ -1,82 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cart | Gang Apparel</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css" />
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    />
 </head>
 <body>
-
-<!-- Header -->
-<header>
-    <h1>GANG APPAREL</h1>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="catalogue.html">Catalogue</a>
-        <a href="cart.html">Cart</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-</header>
-
-<!-- Page Title -->
-<section class="page-title">
-    <h2>SHOPPING CART</h2>
-    <p>Review your selected items</p>
-</section>
-
-<!-- Cart Container -->
-<section class="cart">
-
-    <!-- Cart Item -->
-    <div class="cart-item">
-        <div class="cart-image">Image</div>
-        <div class="cart-details">
-            <h3>GANG APPARELT‑Shirt</h3>
-            <p>Price: BWP 280.00</p>
-            
+    <header class="bg-dark text-white py-3">
+        <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between">
+            <h1 class="h4 mb-3 mb-md-0">GANG APPAREL</h1>
+            <nav class="nav gap-2">
+                <a class="nav-link text-white px-2" href="index.html">Home</a>
+                <a class="nav-link text-white px-2" href="catalogue.html">Catalogue</a>
+                <a class="nav-link text-white px-2 active" href="cart.html">Cart</a>
+                <a class="nav-link text-white px-2" href="about.html">About</a>
+                <a class="nav-link text-white px-2" href="contact.html">Contact</a>
+            </nav>
         </div>
-        <div class="cart-price">BWP 280.00</div>
+    </header>
 
-    </div>
+    <main class="container my-5">
+        <section class="text-center mb-4">
+            <h2 class="fw-bold">SHOPPING CART</h2>
+            <p class="text-muted">Review your selected items before checkout.</p>
+        </section>
 
-    <div class="cart-item">
-        <div class="cart-image">Image</div>
-        <div class="cart-details">
-            <h3>CAP EDITION</h3>
-            <p>Price: BWP 120.00</p>
-            
+        <div class="row gy-4">
+            <div class="col-lg-8">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <div class="list-group">
+                            <div class="list-group-item d-flex flex-column flex-md-row align-items-center gap-3">
+                                <div class="cart-image rounded" style="width: 120px; height: 120px;">
+                                <img src="images/tshirt.jpg"
+                               alt="Gang Apparel T-Shirt"
+                                 style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                                <div class="flex-grow-1">
+                                    <h3 class="h6 mb-2">GANG APPAREL T-Shirt</h3>
+                                    <p class="mb-1 text-muted">Size: M • Color: Black / White</p>
+                                    <p class="mb-0 fw-semibold">Price: BWP 280.00</p>
+                                </div>
+                                <div class="text-end">
+                                    <p class="mb-2 fw-semibold">BWP 280.00</p>
+                                    <button class="btn btn-sm btn-outline-danger">Remove</button>
+                                </div>
+                            </div>
+
+                            <div class="list-group-item d-flex flex-column flex-md-row align-items-center gap-3">
+                                <div class="cart-image rounded" style="width: 120px; height: 120px;">
+                                    <img src="images/cap.jpg"
+                                         alt="Gang Apparel Cap"
+                                         style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                                <div class="flex-grow-1">
+                                    <h3 class="h6 mb-2">CAP EDITION</h3>
+                                    <p class="mb-1 text-muted">One size fits all</p>
+                                    <p class="mb-0 fw-semibold">Price: BWP 120.00</p>
+                                </div>
+                                <div class="text-end">
+                                    <p class="mb-2 fw-semibold">BWP 120.00</p>
+                                    <button class="btn btn-sm btn-outline-danger">Remove</button>
+                                </div>
+                            </div>
+
+                            <div class="list-group-item d-flex flex-column flex-md-row align-items-center gap-3">
+                                <div class="cart-image rounded" style="width: 120px; height: 120px;">
+                                    <img src="images/hoodie.jpg"
+                                         alt="Gang Apparel HOODIE"
+                                         style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                                <div class="flex-grow-1">
+                                    <h3 class="h6 mb-2">GANG APPAREL HOODIE</h3>
+                                    <p class="mb-1 text-muted">Size: L • Color: Charcoal</p>
+                                    <p class="mb-0 fw-semibold">Price: BWP 350.00</p>
+                                </div>
+                                <div class="text-end">
+                                    <p class="mb-2 fw-semibold">BWP 350.00</p>
+                                    <button class="btn btn-sm btn-outline-danger">Remove</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <aside class="col-lg-4">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h3 class="h5 mb-4">Order Summary</h3>
+                        <div class="d-flex justify-content-between mb-2">
+                            <span>Subtotal</span>
+                            <strong>BWP 750.00</strong>
+                        </div>
+                        <div class="d-flex justify-content-between mb-2">
+                            <span>Shipping</span>
+                            <strong>BWP 0.00</strong>
+                        </div>
+                        <div class="d-flex justify-content-between mb-4">
+                            <span>Tax</span>
+                            <strong>BWP 0.00</strong>
+                        </div>
+                        <div class="border-top pt-3 mb-4">
+                            <div class="d-flex justify-content-between fw-bold">
+                                <span>Total</span>
+                                <span>BWP 750.00</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary w-100">PROCEED TO CHECKOUT</button>
+                    </div>
+                </div>
+            </aside>
         </div>
-        <div class="cart-price">BWP 120.00</div>
+    </main>
 
-    </div>
-
-    <div class="cart-item">
-        <div class="cart-image">Image</div>
-        <div class="cart-details">
-            <h3>GANG APPAREL HOODIE</h3>
-            <p>Price: BWP 350.00</p>
-            
+    <footer class="bg-light py-4">
+        <div class="container text-center text-muted">
+            © 2025 Gang Apparel
         </div>
-        <div class="cart-price">BWP 350.00</div>
+    </footer>
 
-    </div>
-
-    <!-- Cart Summary -->
-    <div class="cart-summary">
-        <h3>Order Summary</h3>
-        <p>Subtotal: BWP 750.00</p>
-
-        <button class="checkout-btn">PROCEED TO CHECKOUT</button>
-    </div>
-
-</section>
-
-<!-- Footer -->
-<footer>
-    <p>© 2025 Gang Apparel</p>
-</footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 </body>
 </html>

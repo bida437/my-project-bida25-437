@@ -4,54 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catalogue</title>
-    style.css
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <h1>GANG APPAREL</h1>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="catalogue.html">Catalogue</a>
-        <a href="cart.html">Cart</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-<!-- Page Title -->
-<section class="page-title">
-    <h2>CATALOGUE</h2>
-    <p>Streetwear essentials designed for everyday culture</p>
-</section>
+    <div class="container py-4">
+        <header class="d-flex flex-wrap justify-content-between align-items-center mb-4">
+            <h1 class="m-0">GANG APPAREL</h1>
+            <nav class="nav">
+                <a class="nav-link px-2" href="index.html">Home</a>
+                <a class="nav-link px-2 active" href="catalogue.html">Catalogue</a>
+                <a class="nav-link px-2" href="cart.html">Cart</a>
+                <a class="nav-link px-2" href="about.html">About</a>
+                <a class="nav-link px-2" href="contact.html">Contact</a>
+            </nav>
+        </header>
 
-<!-- Product Catalogue -->
-<section class="catalogue">
-    
-    <div class="product-card">
-        <div class="product-image">Image</div>
-        <h3>GANG APPAREL T-shirt</h3>
-        <p>BWP 280.00</P>
-        
+        <section class="page-title text-center mb-5">
+            <h2>CATALOGUE</h2>
+            <p class="text-muted">Streetwear essentials designed for everyday culture</p>
+        </section>
+
+        <section class="catalogue mb-5">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 border-dark">
+                        <div class="card-body text-center">
+                            <img src="images/tshirt.jpg"
+     alt="Gang Apparel T-Shirt"
+     class="img-fluid rounded mb-3"
+     style="height: 200px; object-fit: cover;">
+                            <h5 class="card-title">GANG APPAREL T-SHIRT</h5>
+                            <p class="card-text">BWP 280.00</p>
+                            <a href="cart.html" class="btn btn-outline-dark">SHOP NOW</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100 border-dark">
+                        <div class="card-body text-center">
+                            <img src="images/cap.jpg"
+     alt="Gang Apparel Cap"
+     class="img-fluid rounded mb-3"
+     style="height: 200px; object-fit: cover;">
+                            <h5 class="card-title">CAP EDITION</h5>
+                            <p class="card-text">BWP 120.00</p>
+                            <a href="cart.html" class="btn btn-outline-dark">SHOP NOW</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100 border-dark">
+                        <div class="card-body text-center">
+                            <img src="images/hoodie.jpg"
+     alt="Gang Apparel T-Shirt"
+     class="img-fluid rounded mb-3"
+     style="height: 200px; object-fit: cover;">
+                            
+                            <h5 class="card-title">GANG APPAREL HOODIE</h5>
+                            <p class="card-text">BWP 350.00</p>
+                            <a href="cart.html" class="btn btn-outline-dark">SHOP NOW</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="text-center py-4 border-top">
+            <p class="mb-0">&copy; 2023 GANG APPAREL. All rights reserved.</p>
+        </footer>
     </div>
 
-    <div class="product-card">
-        <div class="product-image">Image</div>
-        <h3>CAP EDITION</h3>
-        <p>BWP 120.00</P>
-
-    </div>
-
-    <div class="product-card">
-        <div class="product-image">Image</div>
-        <h3>GANG APPAREL HOODIE</h3>
-        <p>BWP 350.00</P>
-    
-    </div>
-
-    
-</section>
-
-<!-- Footer -->
-<footer>
-    <p>&copy; 2023 GANG APPAREL. All rights reserved.</p>
-</footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
